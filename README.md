@@ -6,7 +6,6 @@
   <h3 align="center">Libft</h3>
   Build Your Own C Library
   <br>
-  <br>
 </div>
 
 # Libft
