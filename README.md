@@ -94,3 +94,5 @@ Inspired by the C standard library, this project involves implementing essential
 | `ft_lstclear`     | Delete the sequence of elements of the list from a starting point. |
 | `ft_lstiter`      | Apply function to the content of all list elements. |
 | `ft_lstmap`       | Apply function to the content of all list elements into a new list. |
+
+<br>
