@@ -6,7 +6,7 @@
 /*   By: hakaddou <hakaddou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 03:59:17 by hakaddou          #+#    #+#             */
-/*   Updated: 2022/03/10 20:26:30 by hakaddou         ###   ########.fr       */
+/*   Updated: 2024/09/20 11:47:41 by hakaddou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,16 +63,3 @@ char	**ft_split(char const *s, char c)
 	tmp[words] = 0;
 	return (tmp);
 }
-
-// int main ()
-// {
-// 	char str[] = "hadi is trying printf";
-// 	int i = 0;
-// 	char **str2 = ft_split (str, ' ');
-// 	while (i < word_count (str, ' '))
-// 	{
-// 		ft_printf ("%s\n", str2[i]);
-// 		i++;
-// 	}
-// 	ft_printf ("Sandy is %d years old\n", 23);
-// }

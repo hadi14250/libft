@@ -6,7 +6,7 @@
 #    By: hakaddou <hakaddou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/26 01:14:11 by hakaddou          #+#    #+#              #
-#    Updated: 2022/06/14 21:22:14 by hakaddou         ###   ########.fr        #
+#    Updated: 2024/09/20 11:48:44 by hakaddou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_split.c \
 					ft_strjoin.c ft_strmapi.c ft_strtrim.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
 					ft_putendl_fd.c ft_putnbr_fd.c ft_parse.c ft_printf.c ft_put_address.c \
 					ft_put_hex.c ft_putchar.c ft_putnbr_u.c ft_putnbr.c ft_putstr.c ft_capitalise.c ft_strsjoin.c \
-					get_next_line.c FIZZBUZZ.c get_next_line_utils.c
+					get_next_line.c FIZZBUZZ.c get_next_line_utils.c main.c
 					
 OBJS			= $(SRCS:.c=.o)
 
