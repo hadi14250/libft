@@ -10,16 +10,16 @@
 
 # Libft
 
-Inspired by the C standard library, this project involves implementing essential functions from scratch. We begin with simple string manipulation and memory management, progressing to more complex utilities. The goal is to deepen our understanding of C programming and enhance our problem-solving skills.
+Libft is a personal reimplementation of core functions from the C standard library, written entirely from scratch. Starting with the basics of string handling and memory operations, the project gradually expands into more advanced utilities. The aim is to strengthen low-level C skills, get comfortable with manual memory management, and build a solid toolkit that can be reused in future projects.
 
 <br>
 
 
 ## How to run
-- Go to root directory, then main.c and use any function from libft.h
-- Go to root directory and run `make`
-- Run `gcc -Wall -Wextra -Werror libft.a`
-- Run `./a.out`
+- Navigate to the project's root directory and edit `main.c` to call any function declared in `libft.h`
+- From the root directory, run `make` to build the static library
+- Compile your program with `gcc -Wall -Wextra -Werror libft.a`
+- Execute the resulting binary with `./a.out`
 
 <br>
 
@@ -28,55 +28,55 @@ Inspired by the C standard library, this project involves implementing essential
 #### Character Manipulation:
 | Function | Description |
 | :- | :- |
-| `ft_isalpha` | Alphabetic character test. |
-| `ft_isdigit` | Decimal-digit character test. |
-| `ft_isalnum` | Alphanumeric character test. |
-| `ft_isascii` | Test for ASCII character. |
-| `ft_toupper` | Lower case to upper case letter conversion. |
-| `ft_tolower` | Upper case to lower case letter conversion. |
+| `ft_isalpha` | Checks whether a character is a letter. |
+| `ft_isdigit` | Checks whether a character is a decimal digit. |
+| `ft_isalnum` | Checks whether a character is a letter or digit. |
+| `ft_isascii` | Checks whether a character belongs to the ASCII set. |
+| `ft_toupper` | Converts a lowercase letter to uppercase. |
+| `ft_tolower` | Converts an uppercase letter to lowercase. |
 
 #### String Manipulation:
 | Function | Description |
 | :- | :- |
-| `ft_strlen`   | Find the length of the string. |
-| `ft_strlcpy`  | Size-bounded string copying. |
-| `ft_strlcat`  | Size-bounded string concatenation. |
-| `ft_strchr`   | Locate the character in the string (first occurrence). |
-| `ft_strrchr`  | Locate the character in the string (last occurrence). |
-| `ft_strncmp`  | Compare strings (size-bounded). |
-| `ft_strnstr`  | Locate a substring in a string (size-bounded) |
-| `ft_substr`   | Extract substring from a string. |
-| `ft_strjoin`  | Concatenate two strings into a new string (with malloc). |
-| `ft_strtrim`  | Trim the beginning and end of the string with the specified characters. |
-| `ft_split`    | Split string, with specified character as delimiter, into an array of strings. |
-| `ft_strmapi`  | Create a new string by modifying the string with a specified function. |
-| `ft_striteri` | Iterates through a string, enabling character and index manipulation. |
+| `ft_strlen`   | Returns the number of characters in a string. |
+| `ft_strlcpy`  | Copies a string with a defined size limit. |
+| `ft_strlcat`  | Appends one string to another with a defined size limit. |
+| `ft_strchr`   | Returns a pointer to the first occurrence of a character in a string. |
+| `ft_strrchr`  | Returns a pointer to the last occurrence of a character in a string. |
+| `ft_strncmp`  | Compares two strings up to a given number of characters. |
+| `ft_strnstr`  | Searches for a substring within a bounded portion of a string. |
+| `ft_substr`   | Returns a newly allocated substring extracted from a given string. |
+| `ft_strjoin`  | Returns a newly allocated string formed by joining two strings. |
+| `ft_strtrim`  | Returns a string with specified characters removed from both ends. |
+| `ft_split`    | Splits a string into an array of substrings using a delimiter. |
+| `ft_strmapi`  | Returns a new string built by applying a function to each character. |
+| `ft_striteri` | Applies a function to each character of a string, with access to its index. |
 
 #### Memory Manipulation:
 | Function | Description |
 | :- | :- |
-| `ft_calloc`  | Memory allocation. |
-| `ft_memset`  | Write a byte to a byte string. |
-| `ft_bzero`   | Write zeroes to a byte string. |
-| `ft_memcpy`  | Copy memory area. |
-| `ft_memmove` | Copy byte string. |
-| `ft_memchr`  | Locate byte in byte string. |
-| `ft_memcmp`  | Compare byte string. |
-| `ft_strdup`  | Save a copy of a string (with malloc). |
+| `ft_calloc`  | Allocates and zero-initializes a block of memory. |
+| `ft_memset`  | Fills a memory block with a given byte value. |
+| `ft_bzero`   | Sets a memory block to zero. |
+| `ft_memcpy`  | Copies bytes from one memory area to another. |
+| `ft_memmove` | Safely copies bytes between potentially overlapping memory areas. |
+| `ft_memchr`  | Searches for a byte within a memory block. |
+| `ft_memcmp`  | Compares two memory blocks byte by byte. |
+| `ft_strdup`  | Returns a newly allocated copy of a given string. |
 
 #### Number Manipulation:
 | Function | Description |
 | :- | :- |
-| `ft_atoi` | Convert the ASCII string to an integer. |
-| `ft_itoa` | Convert integer to ASCII string. |
+| `ft_atoi` | Parses an ASCII string and returns its integer value. |
+| `ft_itoa` | Returns a newly allocated ASCII representation of an integer. |
 
 #### File Descriptor Functions:
 | Function | Description |
 | :- | :- |
-| `ft_putchar_fd` | Output a character to the given file. |
-| `ft_putstr_fd`  | Output string to the given file. |
-| `ft_putendl_fd` | Output string to given file with newline. |
-| `ft_putnbr_fd`  | Output integer to the given file. |
+| `ft_putchar_fd` | Writes a single character to a given file descriptor. |
+| `ft_putstr_fd`  | Writes a string to a given file descriptor. |
+| `ft_putendl_fd` | Writes a string followed by a newline to a given file descriptor. |
+| `ft_putnbr_fd`  | Writes an integer to a given file descriptor. |
 
 ## BONUS
 
@@ -84,14 +84,14 @@ Inspired by the C standard library, this project involves implementing essential
 
 | Function | Description |
 | :- | :- |
-| `ft_lstnew`       | Create new list. |
-| `ft_lstadd_front` | Add a new element at the beginning of the list. |
-| `ft_lstadd_back`  | Add a new element at the end of the list. |
-| `ft_lstsize`      | Count elements of a list. |
-| `ft_lstlast`      | Find the last element of the list. |
-| `ft_lstdelone`    | Delete element from the list. |
-| `ft_lstclear`     | Delete the sequence of elements of the list from a starting point. |
-| `ft_lstiter`      | Apply function to the content of all list elements. |
-| `ft_lstmap`       | Apply function to the content of all list elements into a new list. |
+| `ft_lstnew`       | Allocates and returns a new list node. |
+| `ft_lstadd_front` | Inserts a node at the head of the list. |
+| `ft_lstadd_back`  | Appends a node to the tail of the list. |
+| `ft_lstsize`      | Returns the total number of nodes in the list. |
+| `ft_lstlast`      | Returns the last node of the list. |
+| `ft_lstdelone`    | Frees a single list node and its content. |
+| `ft_lstclear`     | Frees every node from a given starting point until the end. |
+| `ft_lstiter`      | Applies a function to the content of every node in the list. |
+| `ft_lstmap`       | Builds a new list by applying a function to each node's content. |
 
 <br>
